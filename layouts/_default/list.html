@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ .Content }}
+<nav>
+  <ul>
+  {{ range .Pages }}
+    <li>
+      <article class="post">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time class="postdate" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "2006-01-02" }}</time>
+      </article>
+    </li>
+  {{ end }}
+  </ul>
+</nav>
+{{ end }}

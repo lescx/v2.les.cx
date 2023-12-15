@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /.well-known/
+
+Sitemap: https://www.les.cx/sitemap.xml
