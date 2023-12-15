@@ -3,3 +3,4 @@ languageCode = 'en-us'
 defaultcontentlanguage = 'en'
 timezone = 'Europe/Berlin'
 title = 'My New Hugo Site'
+disablehugogeneratorinject = true
