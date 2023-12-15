@@ -55,12 +55,10 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
         run: |
           hugo \
             --minify \
+            --environment production \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact

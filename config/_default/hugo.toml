@@ -2,5 +2,6 @@ baseURL = 'https://www.les.cx/'
 languageCode = 'en-us'
 defaultcontentlanguage = 'en'
 timezone = 'Europe/Berlin'
-title = 'My New Hugo Site'
+title = 'Luca Etienne Schulz'
 disablehugogeneratorinject = true
+cleanDestinationDir = true

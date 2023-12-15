@@ -1,0 +1,16 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@les.cx
+Canonical: https://www.les.cx/.well-known/security.txt
+Encryption: data:application/x-age-public-key,age14eudkm9f8tr28y4arsja2asnlvymjfrkf2mr3et9328ny00a0sxqtg5pg3
+Expires: 2024-10-14T00:00:00Z
+Preferred-Languages: en
+-----BEGIN PGP SIGNATURE-----
+
+iLkEARMKAB0WIQRwTjeX3FE+sLmCW5WyHhpXBjL3IgUCZQNy+AAKCRCyHhpXBjL3
+IosfAgkBzC/+QMQuhG7dL/EQ+MmaMbwpgRsTusEQ5HhjB+xnN7ZVuhrEE62UE8Ab
+9/mlb0kgsB7JvOXl1b5+PmqCKkURcmUCCQFRvuy06AoIITKyrPy90UC9aCAgqbGq
+V3XYj5WB/dHdfFmjW7fZd0zT/3hD7t4D3BqU1FkYKfzNGlz4adMoD3mkiQ==
+=dW0s
+-----END PGP SIGNATURE-----
