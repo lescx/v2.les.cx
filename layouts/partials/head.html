@@ -1,5 +1,8 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{- block "title" . -}}
-  {{ .Site.Title -}}
-{{ end }}</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="{{ .Description }}" name="description" property="og:description">
+  <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", "}}{{ end }}" />
+  <meta content="website" property="og:type">
+  <title>{{ block "title" . }}{{- partial "title.html" . -}}{{ end }}</title>
+</head>

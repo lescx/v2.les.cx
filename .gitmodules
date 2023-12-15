@@ -1,0 +1,3 @@
+[submodule "themes/asciigram"]
+	path = themes/asciigram
+	url = https://github.com/lescx/asciigram.git
