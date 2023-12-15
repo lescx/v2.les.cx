@@ -5,3 +5,4 @@ timezone = 'Europe/Berlin'
 title = 'Luca Etienne Schulz'
 disablehugogeneratorinject = true
 cleanDestinationDir = true
+theme = 'asciigram'
