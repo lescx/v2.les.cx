@@ -1,0 +1,6 @@
+noJSConfigInAssets = true
+[build.buildStats]
+  disableClasses = false
+  disableIDs = false
+  disableTags = false
+  enable = true
