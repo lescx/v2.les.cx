@@ -10,5 +10,6 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:type" content="website">
   <title>{{ block "title" . }}{{- partial "title.html" . -}}{{ end }}</title>
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>

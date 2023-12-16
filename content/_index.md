@@ -3,7 +3,7 @@ title = 'Luca Etienne Schulz'
 draft = false
 +++
 
-Luca Etienne Schulz (`les(\.?cx)?`). Security researcher working on system hardening focused on ChromeOS/GrapheneOS.
+Luca Etienne Schulz (`les(\.?cx)?`). Security researcher working on system hardening with ChromeOS/GrapheneOS focus.
 
 Links:
 
