@@ -18,3 +18,12 @@ You can contact me via Matrix or email. Before contacting me, read the [Netiquet
     * [S/MIME](#)
     * [PGP](/.well-known/openpgpkey/hu/wbp7trgro48kdyd9oi1ykze9zj5hpqwb)
     * [age](/.well-known/security.txt).
+
+---
+
+You can find me semi-active as `les(\.?cx)?` on:
+
+* IRC
+* GitHub
+* Codeberg
+* Bluesky

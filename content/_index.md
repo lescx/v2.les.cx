@@ -3,6 +3,8 @@ title = 'Luca Etienne Schulz'
 draft = false
 +++
 
-Luca Etienne Schulz `les(\.?cx)?`. Security researcher working on system hardening with ChromeOS/GrapheneOS focus.
+# Luca Etienne Schulz
 
-From time to time, the [articles](/articles) [[RSS](/articles/index.xml)] section features extensive articles on topics that concern me.
+Security researcher working on ChromeOS/GrapheneOS system hardening.
+
+From time to time, the [articles](/articles) [[RSS](/articles/index.xml)] section features extensive articles about security and digital minimalism.
