@@ -6,10 +6,10 @@
   <ul>
   {{ range .Pages }}
     <li>
-      <article class="post">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <time class="postdate" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "2006-01-02" }}</time>
-      </article>
+      <div class="article-post">
+        <a href="{{ .Permalink }}" class="post-link">{{ .Title }}</a>
+        <time class="post-date" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "2006-01-02" }}</time>
+      </div>
     </li>
   {{ end }}
   </ul>

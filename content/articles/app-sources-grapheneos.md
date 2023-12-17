@@ -1,9 +1,6 @@
 +++
 draft = false
-
 title = 'A Summary of App Repositories for GrapheneOS'
-subtitle = "Don't bully the app store with only 12 apps… :("
-tldr = 'Ideally, only use GrapheneOSs *Apps* app and [Accrescent](https://accrescent.app).  If you use the sandboxed Google Play Services then make use of the Google Play Store!  Download [Obtainium](https://github.com/ImranR98/Obtainium) from GitHub for APKs not found on Accrescent or in the Google Play Store.'
 
 # SEO ~150 chars max
 description = 'A comparison of different sources to retrieve apps from for GrapheneOS.'
@@ -12,6 +9,14 @@ keywords = ['GrapheneOS', 'Aurora Store', 'F-Droid', 'Accrescent', 'Obtainium']
 
 date = 2023-09-17T18:13:10+02:00
 +++
+
+> Don't bully the app store with 12 apps… :(
+
+**tl;dr:**
+
+Ideally, only use GrapheneOSs *Apps* app and [Accrescent](https://accrescent.app).  If you use the sandboxed Google Play Services then make use of the Google Play Store!  Download [Obtainium](https://github.com/ImranR98/Obtainium) from GitHub for APKs not found on Accrescent or in the Google Play Store.
+
+---
 
 Since in the GrapheneOS Matrix rooms the question arises almost daily about the best way to obtain Apps, this is a short "how to" and "why to" for GrapheneOS users.  The goal is to obtain Apps from a source that is trustworthy and secure without being altered on the way to the device.
 
@@ -29,12 +34,12 @@ Below are the sources from which you should obtain your apps in descending order
 
 ## GrapheneOS's *Apps* App
 
--- To-Do --
+* Used automatically if you use GrapheneOS
 
 
 ## Accrescent
 
-And here we are… The app source with 12 apps. [Accrescent](https://accrescent.app/).
+The app source with 12 apps. [Accrescent](https://accrescent.app/).
 
 Accrescent's focus is to have a modern code base with a focus on privacy and security.
 
@@ -46,13 +51,15 @@ For a full list of features, please take a look at the [FAQ](https://accrescent.
 
 Also…:
 
-* Unlike F-Droid, they actually care if the signature changes!
-* Accrescent uses a strong signing method for its repository metadata than F-Droid (Ed25519 whole-file signing vs Jar signing)
+* Unlike F-Droid, they actually care if the developers signature changes!
+* Accrescent uses a strong signing method for its repository metadata than F-Droid (ed25519 whole-file signing vs Jar signing)
 
 
 ## Sandboxed Google Play Store
 
 I want to point out again that this guide is *not* looking for the most private way to obtain its apps, but the most secure, as defined above.
+
+Also, I'm not talking about MicroG.
 
 * https://nitter.net/GrapheneOS/status/1497272529223917575
 * Developer and Google sign the app.
@@ -61,19 +68,19 @@ I want to point out again that this guide is *not* looking for the most private 
 
 ## Obtainium
 
-Most repository hosting provider (GitHub, GitLab, Codeberg,…) allow subscribing to a project via RSS feeds. Many even support multiple RSS feeds on a per commit or per release basis.
+Most repository hosting provider (GitHub, GitLab, Codeberg,…) allow subscribing to a project via RSS feeds.  Many even support multiple RSS feeds on a per commit or per release basis.
 
 [Obtainium](https://github.com/ImranR98/Obtainium) builds on top of this concept and allows a direct download of apps straight from the source.
-Obtainium also scrapes from some website app sources like MullvadVPN, Signal. See their documentation for a long list of supported sources.
+Obtainium also scrapes from some website app sources like MullvadVPN, Signal.  See their documentation for a long list of supported sources.
 
-The UI and codebase are modern, with the code written in Dart. Updates can be rolled out fast by design.
+The UI and codebase are modern, with the code written in Dart.
 
 *Caveat:* The project is pretty new so not everything works perfectly (e.g. GitLab requires an API key to download apps) - but it works as a daily driver! Also, the core problem remains: (GitHub) releases aren't a trustworthy solution for APK installation.
 
 
 ## APK von GitHub Releases
 
-* GitHub releases are not all the same. Ultimately, GitHub releases are just git tags and nothing stops a developer (and or malicious actors) from injecting manipulated APKs. 
+* GitHub releases are not all the same.  Ultimately, GitHub releases are just git tags and nothing stops a developer (and or malicious actors) from injecting manipulated APKs. 
 * Uniform and simpler infrastructure for the developer and user in comparison to websites.
 * Signatures can be verified but UI doesn't tell at all if signing key has changed.
     * Means, similar process to GPG via website
@@ -110,6 +117,6 @@ Not a particularly confidence-inspiring way to obtain an app.
 And not a user-friendly one. How often have you checked the PGP signature on your phone for a programme?
 
 
-## Conclusion
+## Summary
 
 Currently it isn't possible to just use Apps and Accrescent. If you do not want to use Google Play Services, then use Obtainium. Otherwise also use the Google Play Store where you can.

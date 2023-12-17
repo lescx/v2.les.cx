@@ -1,6 +1,5 @@
 +++
 title = 'Privacy'
-date = 2023-12-15T22:23:20+01:00
 draft = false
 +++
 

@@ -1,6 +1,5 @@
 +++
 title = 'Copyright'
-date = 2023-12-15T22:21:53+01:00
 draft = false
 +++
 
