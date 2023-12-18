@@ -6,3 +6,23 @@ title = 'Luca Etienne Schulz'
 disablehugogeneratorinject = true
 cleanDestinationDir = true
 theme = 'asciigram'
+
+disableKinds = ['taxonomy', 'rss']
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.121.1"
+
+[mediaTypes]
+[mediaTypes."application/atom+xml"]
+suffix = "xml"
+
+[outputFormats.atom]
+    mediaTypes = "application/atom+xml"
+    baseName = "index"
+    isPlainText = false
+
+[outputs]
+    home = ['html']
+    section = ['html', 'atom']

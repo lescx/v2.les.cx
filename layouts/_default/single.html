@@ -1,9 +1,0 @@
-{{ define "main" }}
-<hgroup>
-  <h1>{{ .Title }}</h1>
-  {{ if .Params.subtitle -}}
-    <p id="subtitle"><i>{{ .Params.subtitle }}</i></p>
-  {{- end }}
-</hgroup>
-{{ .Content }}
-{{ end }}
