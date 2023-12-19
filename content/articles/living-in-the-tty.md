@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 
 title = 'Living in the TTY'
 subtitle = '> Do you expect to run the X Window System? no'
@@ -12,7 +12,7 @@ date = 2023-10-08T10:32:00+02:00
 
 Seit 2021 denke ich viel darüber nach, mein digitales Leben vollständig in ein "OG Terminal" zu verschieben. Viel Charme hatte ich insbesondere dem Gedanke abgewonnen, meine Arbeiten an einem alten Macintosh mit OpenBSD zu erledigen. Alter Monitor, alte Tastatur, hohe Stromkosten.
 
-![Hier Bild einfügen von "OG Terminal"]()
+![Insert image of "OG Terminal"]()
 
 Das heißt keine grafische Oberfläche. Kein Browser. Das Ganze ist aus einem Verdruss entstanden, dass alle bekannten Betriebsysteme ziemlich mies sind. Und Xorg. [Hier bisschen ausführlicher] Plan9 hätte ein gutes Betriebsystem werden können mit grafischer Oberfläche by design, aber Plan9, sein nicht-Erfolg und mehr, ist ein eine ganze Artikelserie für sich.
 

@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = 'A Summary of App Repositories for GrapheneOS'
 
 # SEO ~150 chars max
@@ -10,72 +10,21 @@ keywords = ['GrapheneOS', 'Aurora Store', 'F-Droid', 'Accrescent', 'Obtainium']
 date = 2023-09-17T18:13:10+02:00
 +++
 
-> Don't bully the app store with 12 apps… :(
-
 **tl;dr:**
 
-Ideally, only use GrapheneOSs *Apps* app and [Accrescent](https://accrescent.app).  If you use the sandboxed Google Play Services then make use of the Google Play Store!  Download [Obtainium](https://github.com/ImranR98/Obtainium) from GitHub for APKs not found on Accrescent or in the Google Play Store.
+For GrapheneOS users, the best practice is to use the Apps app and Accrescent, supplemented by the Google Play Store if Google Play Services are in use. In the absence of these options, Obtainium is a viable alternative. Stay cautious and informed about the sources of your app downloads.
 
 ---
 
-Since in the GrapheneOS Matrix rooms the question arises almost daily about the best way to obtain Apps, this is a short "how to" and "why to" for GrapheneOS users.  The goal is to obtain Apps from a source that is trustworthy and secure without being altered on the way to the device.
+Users often seek guidance on secure app procurement. This write-up tries to answer the question where to obtain apps in a short and precise way.
 
-Important: I think it's clear that no app store in the world protects against an app having backdoors built in by its own developers. Therefore, you should think about *which* apps you want to have installed on your device beforehand.
-
-I'm writing a short "what you should definitely not do" here.  I assume this as a consensus.
+Remember, no app repository can guarantee against backdoors introduced by the developers themselves. Thus, choose your apps wisely.
 
 ## Do not…
 
 Do not download APKs from unofficial sources.  This includes every site of the first trillion pages you see on your preffered search engine when you enter "clash of clans apk".  This includes apkpure, Uptodown, APKMirror and other known direct download websites.
 
-Do not install APKs someone sent you via WhatsApp.  Or Telegram.  Or email.  Or Signal.
-
-Below are the sources from which you should obtain your apps in descending order, starting with the GrapheneOS Apps app and Accrescent.
-
-## GrapheneOS's *Apps* App
-
-* Used automatically if you use GrapheneOS
-
-
-## Accrescent
-
-The app source with 12 apps. [Accrescent](https://accrescent.app/).
-
-Accrescent's focus is to have a modern code base with a focus on privacy and security.
-
-> Accrescent will *remove* apps when they don't meet the target SDK
-
-[Target SDK](https://support.google.com/googleplay/android-developer/answer/11926878)
-
-For a full list of features, please take a look at the [FAQ](https://accrescent.app/faq), [features](https://accrescent.app/features) and also the [App requirements](https://accrescent.app/docs/guide/publish/requirements.html) section on which apps are allowed to be hosted on Accrescent.
-
-Also…:
-
-* Unlike F-Droid, they actually care if the developers signature changes!
-* Accrescent uses a strong signing method for its repository metadata than F-Droid (ed25519 whole-file signing vs Jar signing)
-
-
-## Sandboxed Google Play Store
-
-I want to point out again that this guide is *not* looking for the most private way to obtain its apps, but the most secure, as defined above.
-
-Also, I'm not talking about MicroG.
-
-* https://nitter.net/GrapheneOS/status/1497272529223917575
-* Developer and Google sign the app.
-* Strict minimum SDK (same Accrescent uses) - but do not remove apps that don't match target API level. Read here: [Target API level requirements for Google Play apps](https://support.google.com/googleplay/android-developer/answer/11926878)
-
-
-## Obtainium
-
-Most repository hosting provider (GitHub, GitLab, Codeberg,…) allow subscribing to a project via RSS feeds.  Many even support multiple RSS feeds on a per commit or per release basis.
-
-[Obtainium](https://github.com/ImranR98/Obtainium) builds on top of this concept and allows a direct download of apps straight from the source.
-Obtainium also scrapes from some website app sources like MullvadVPN, Signal.  See their documentation for a long list of supported sources.
-
-The UI and codebase are modern, with the code written in Dart.
-
-*Caveat:* The project is pretty new so not everything works perfectly (e.g. GitLab requires an API key to download apps) - but it works as a daily driver! Also, the core problem remains: (GitHub) releases aren't a trustworthy solution for APK installation.
+Do not install APKs someone sent you via WhatsApp.  Or email.  Or Signal.
 
 
 ## APK von GitHub Releases
@@ -87,7 +36,53 @@ The UI and codebase are modern, with the code written in Dart.
 * CI/CD possible to build APKs using GitHub Pipeline.
 
 
-## Aurora Store
+## Recommended Sources for App Downloads
+
+1. GrapheneOS's Apps App
+
+* Comes pre-installed with GrapheneOS.
+* Only features pre-installed apps for GrapheneOS.
+
+2. [Accrescent](https://accrescent.app/)
+
+> The app source with 12 apps.
+
+* Focuses on privacy and security with a modern code base.
+* Removes apps not meeting the target SDK, thus modern standards.
+* More vigilant about developer signature changes compared to F-Droid.
+* Employs ed25519 whole-file signing for repository metadata.
+
+3. Sandboxed Google Play Store
+
+I'm *not* talking about MicroG which is not recommended to use at all.
+
+* Offers both developer and Google app signing.
+* Enforces strict minimum SDK requirements.
+* More details on target API level: Google Play API level requirements.
+* https://nitter.net/GrapheneOS/status/1497272529223917575
+* Strict minimum SDK (same Accrescent uses) - but do not remove apps that don't match target API level. Read here: [Target API level requirements for Google Play apps](https://support.google.com/googleplay/android-developer/answer/11926878)
+
+4. Obtainium
+
+* Direct download from repositories like GitHub, GitLab, and Codeberg and a few websites (e.g. MullvadVPN, Signal).
+* UI and codebase are modern, written in Dart.
+* Note: Some functionality is in development, and GitHub releases are not inherently secure for APK downloads.
+
+5. APKs from GitHub Releases
+
+* Provides a uniform infrastructure for developers and users.
+* Allows signature verification, but the UI does not alert users to signature changes.
+
+6. F-Droid and Its Derivatives
+
+* Addresses some security concerns but leaves *a lot* to be desired…
+* Recommended reading: [F-Droid Security Issues](https://privsec.dev/posts/android/f-droid-security-issues)
+* [2023-09-03 F-Droid: Reproducible builds, signing keys, and binary repos](https://f-droid.org/en/2023/09/03/reproducible-builds-signing-keys-and-binary-repos.html)
+* [2022-02-25 GrapheneOS: On Google Play Store and F-Droid](https://nitter.net/GrapheneOS/status/1497273173364166662)
+
+7. Aurora Store
+
+* Not secure or trustworthy.
 
 Reasons, why you might want to use Aurora Store in the past:
 
@@ -95,28 +90,9 @@ Reasons, why you might want to use Aurora Store in the past:
 * One does not want to or cannot use a Google Play Store.
 * Security issue: The Google Play Store has special rights on one's own device and is not subject to the same App Sandbox as other apps are.
 
+8. APKs from Official Websites
 
-## F-Droid (and derivates)
-
-I recommend this article on [F-Droid Security Issues](https://privsec.dev/posts/android/f-droid-security-issues) which goes into great detail. ([Wayback Machine](http://web.archive.org/web/20230000000000*/https://privsec.dev/posts/android/f-droid-security-issues))
-
-See also…
-
-* [2023-09-03 F-Droid: Reproducible builds, signing keys, and binary repos](https://f-droid.org/en/2023/09/03/reproducible-builds-signing-keys-and-binary-repos.html)
-* [2022-02-25 GrapheneOS: On Google Play Store and F-Droid](https://nitter.net/GrapheneOS/status/1497273173364166662)
-
-
-## APKs from Official Websites
-
-I guess Windows users in particular like to do this because for a long time it was a matter of course on the platform to go to the official website (or not) of a specific program and download the .exe or .msi file. For the most part, you shouldn't do that on Windows, nor on other platforms.
-
-There is no signature check happening if the APK is *actually* coming from the developer(s).
-Also: Do you check the APK hash and PGP signature on android? Probably not.
-
-Not a particularly confidence-inspiring way to obtain an app.
-And not a user-friendly one. How often have you checked the PGP signature on your phone for a programme?
-
-
-## Summary
-
-Currently it isn't possible to just use Apps and Accrescent. If you do not want to use Google Play Services, then use Obtainium. Otherwise also use the Google Play Store where you can.
+* Not recommended due to the lack of signature verification.
+* Not user-friendly or secure.
+* Might lack auto-updates.
+* Android isn't Windows. Don't do it.
