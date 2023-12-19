@@ -27,15 +27,6 @@ Do not download APKs from unofficial sources.  This includes every site of the f
 Do not install APKs someone sent you via WhatsApp.  Or email.  Or Signal.
 
 
-## APK von GitHub Releases
-
-* GitHub releases are not all the same.  Ultimately, GitHub releases are just git tags and nothing stops a developer (and or malicious actors) from injecting manipulated APKs. 
-* Uniform and simpler infrastructure for the developer and user in comparison to websites.
-* Signatures can be verified but UI doesn't tell at all if signing key has changed.
-    * Means, similar process to GPG via website
-* CI/CD possible to build APKs using GitHub Pipeline.
-
-
 ## Recommended Sources for App Downloads
 
 1. GrapheneOS's Apps App
@@ -72,6 +63,7 @@ I'm *not* talking about MicroG which is not recommended to use at all.
 
 * Provides a uniform infrastructure for developers and users.
 * Allows signature verification, but the UI does not alert users to signature changes.
+* Ultimately, GitHub releases are just git tags and nothing stops a developer (and or malicious actors) from injecting manipulated APKs. 
 
 6. F-Droid and Its Derivatives
 
