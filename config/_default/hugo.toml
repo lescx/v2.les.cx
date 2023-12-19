@@ -7,7 +7,7 @@ disablehugogeneratorinject = true
 cleanDestinationDir = true
 theme = 'asciigram'
 
-disableKinds = ['taxonomy', 'rss']
+disableKinds = ['taxonomy']
 
 [module]
   [module.hugoVersion]
@@ -15,14 +15,14 @@ disableKinds = ['taxonomy', 'rss']
     min = "0.121.1"
 
 [mediaTypes]
-[mediaTypes."application/atom+xml"]
-suffix = "xml"
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
 
-[outputFormats.atom]
-    mediaTypes = "application/atom+xml"
-    baseName = "index"
-    isPlainText = false
+[outputFormats]
+  [outputFormats.atom]
+    mediaType = "application/atom+xml"
+    baseName  = "index"
 
 [outputs]
-    home = ['html']
-    section = ['html', 'atom']
+  home = ['html']
+  section = ['html', 'atom']

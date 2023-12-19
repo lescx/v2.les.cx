@@ -7,4 +7,4 @@ draft = false
 
 Security researcher working on ChromeOS/GrapheneOS system hardening.
 
-From time to time, the [articles](/articles) [[RSS](/articles/index.xml)] section features extensive articles about security and digital minimalism.
+From time to time, the [articles](/articles) [[Atom](/articles/index.xml)] section features extensive articles about security and digital minimalism.
