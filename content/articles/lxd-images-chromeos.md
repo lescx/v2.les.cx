@@ -4,15 +4,13 @@ title = 'The future of LXD on ChromeOS does not look good'
 date = 2024-01-02T21:31:00+02:00
 +++
 
-From mid-April 2024, it will not be nearly as easy for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Google's CDN. The image server at images.linuxcontainers.org will be discontinued for LXD users.
-
----
+Starting in mid-April 2024, it will not be nearly as easy for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Google's CDN. The image server at images.linuxcontainers.org will be discontinued for LXD users.
 
 ## Introduction
 
 ChromeOS users who have ever opened a terminal have, consciously or not, used [LXD]([LXD](https://wiki.archlinux.org/title/LXD)). In a nutshell, LXD is used to run Linux in an isolated environment. Sounds a bit like Docker, but it's cooler! :-)
 
-And also similar to Docker, where you download images from [Docker Hub](https://hub.docker.com), with LXD you often download the images from [images.linuxcontainers.org](https://images.linuxcontainers.org). The difference with Docker Hub is that the LXD images are built and provided by just two maintainers, with support from [Canonical](https://canonical.com). And that soon falls on the feet of LXD users, and ChromeOS users in particular. But back to the beginning…
+And also similar to Docker, where you download images from [Docker Hub](https://hub.docker.com). With LXD you often download the images from [images.linuxcontainers.org](https://images.linuxcontainers.org). The difference with Docker Hub is that the LXD images are built and provided by just two maintainers, with support from [Canonical](https://canonical.com). At least Canonical did support it. And that soon falls on the feet of LXD users, and ChromeOS users in particular. But back to the beginning…
 
 ## What happended?
 
@@ -47,29 +45,31 @@ ChromeOS actually has the images.linuxcontainers.org image server in its remote 
 
 [Until mid-April](https://discuss.linuxcontainers.org/t/the-future-of-lxc-incus-images-on-chromeos/18590) you will still be able to download your images. What happens after that is still unclear at the moment.
 
-Google is known for not using AGPL licensed software in its products. The reasons differ from the topic of this article, but a similar situation is known for example from Apple with their steinalt-`bash` version. At the moment it looks as if ChromeOS will be able to upgrade to LXD version 5.20 and then we users will have a problem that has no foreseeable solution at the moment. 
+Google is known for not using AGPL licensed software in its products. The reasons differ from the topic of this article, but a similar situation is known for example from Apple with their `bash` version. At the moment it looks as if ChromeOS will be able to upgrade to LXD version 5.20 and then we users will have a problem that has no foreseeable solution at the moment. 
 
 ## The Incus hard fork
 
-*Psst, this is still WIP. Will be finished in the next 16-20 hours. Come back later if you want to read it in a better shape.*
+As a result of Canonical's sudden licence change and the associated CLA, LXD unfortunately had to undergo a hard fork under duress called [Incus](https://linuxcontainers.org/incus/introduction/).
 
-As a result of Canonical's sudden licence change and the associated CLA, LXD unfortunately had to undergo a hard fork under duress.
+Incus cleaned up the code base and removed rarely used features and all the snap-depended code. Incus does not try to stay compatible with LXD.
 
-Incus user can still access images.linuxcontainers.org.
-
-> Incus is a fork of LXD, a daemon mainly used to manage containers. It is favoured by those who want to treat containers like complete system images.
-> 
-> Canonical has only recently (LXD/LXC/Libvirt/etc have been around for a long time) added virtual machine management support to LXD with version 4.0 LTS, for some reason. So in a way it is a competitor to Libvirt.^2
->
-> [2] https://www.reddit.com/r/linux/comments/15ldqng/comment/jvch136
+Incus user will still be able to download images from images.linuxcontainers.org in the future.
 
 ## Workarounds for the future
 
-LXD allows nested containers (insert). This means that it is already possible to use Incus or Docker in ChromeOS today without any problems. Of course, this feels "hacky" if you first open a Debian image from LXD to start Docker, for example, in which an Alpine Linux is then running.
+LXD allows using nested containers. This feature can be enable using the `security.nesting` flag which is already enabled in the default `penguin` container.
+
+```shell
+(termina) chronos@localhost ~ $ lxc profile show default | grep security.nesting
+security.nesting: "true"
+```
+
+ This means that it is already possible to use Incus or Docker inside of LXD. But of course, this feels kinda "hacky".
 
 Also, you can build your own LXD images using [distrobuilder](https://linuxcontainers.org/distrobuilder/introduction/).
 
 ## The ideal solution
 
-Incus is a possible alternative to LXD under ChromeOS. Unfortunately, it is not possible to replace LXD under ChromeOS with Incus.
-Ideally, Google provides other images besides the Debian image, if not via a public image server, then perhaps natively from ChromeOS with their CDN.
+Unfortunately, it is not possible to replace LXD with Incus under ChromeOS without entering Developer mode.
+
+It would be great if Google would provide other images besides the Debian. If not via a public image server, then perhaps through their CDN.
