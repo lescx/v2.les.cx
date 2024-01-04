@@ -67,5 +67,5 @@ Also, you can build your own LXD images using [distrobuilder](https://linuxconta
 
 ## The ideal solution
 
-Incus, a fork of LXD, is a possible alternative to LXD under ChromeOS. Unfortunately, it is not possible to replace LXD under ChromeOS with Incus.
+Incus is a possible alternative to LXD under ChromeOS. Unfortunately, it is not possible to replace LXD under ChromeOS with Incus.
 Ideally, Google provides other images besides the Debian image, if not via a public image server, then perhaps natively from ChromeOS with their CDN.
