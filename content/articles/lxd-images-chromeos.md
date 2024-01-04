@@ -64,9 +64,9 @@ LXD allows using nested containers. This feature can be enable using the `securi
 security.nesting: "true"
 ```
 
- This means that it is already possible to use Incus or Docker inside of LXD. But of course, this feels kinda "hacky".
+ This means that it is already possible to use Incus or Docker inside of LXD. Also, you can use QEMU.
 
-Also, you can build your own LXD images using [distrobuilder](https://linuxcontainers.org/distrobuilder/introduction/).
+It is also possible to build your own LXD images using [distrobuilder](https://linuxcontainers.org/distrobuilder/introduction/).
 
 ## The ideal solution
 
