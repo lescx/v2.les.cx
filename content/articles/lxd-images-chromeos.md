@@ -71,6 +71,6 @@ It is also possible to build your own LXD images using [distrobuilder](https://l
 
 ## The ideal solution
 
-Unfortunately, it is not possible to replace LXD with Incus under ChromeOS without entering Developer mode.
+Unfortunately, it is not possible to replace LXD with Incus under ChromeOS without going into developer mode.
 
-It would be great if Google would provide other images besides the Debian. If not via a public image server, then perhaps through their CDN.
+It would be great if Google would provide other images besides Debian. If not via a public image server, then perhaps via their CDN.
