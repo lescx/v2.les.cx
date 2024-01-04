@@ -4,7 +4,7 @@ title = 'The future of LXD does not look good on ChromeOS'
 date = 2024-01-02T21:31:00+02:00
 +++
 
-Starting in mid-April, it will not be possible for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Googles CDN. The image server at https://images.linuxcontainers.org is getting phased out.
+Starting in mid-April 2024, it will not be possible for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Googles CDN. The image server at https://images.linuxcontainers.org is getting phased out.
 
 ---
 
