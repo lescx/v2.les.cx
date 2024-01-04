@@ -4,7 +4,7 @@ title = 'The future of LXD does not look good on ChromeOS'
 date = 2024-01-02T21:31:00+02:00
 +++
 
-Starting in mid-April 2024, it will not be possible for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Googles CDN. The image server at https://images.linuxcontainers.org is getting phased out.
+Starting in mid-April 2024, it will not be nearly as easy for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Googles CDN. The image server at https://images.linuxcontainers.org is getting phased out.
 
 ---
 
@@ -62,6 +62,8 @@ As a result of Canonical's sudden licence change and the associated CLA, LXD unf
 ## Workarounds for the future
 
 LXD allows nested containers (insert). This means that it is already possible to use Incus or Docker in ChromeOS today without any problems. Of course, this feels "hacky" if you first open a Debian image from LXD to start Docker, for example, in which an Alpine Linux is then running.
+
+Also, you can build your own LXD images using [distrobuilder](https://linuxcontainers.org/distrobuilder/introduction/).
 
 ## The ideal solution
 
