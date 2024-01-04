@@ -51,6 +51,8 @@ Google is known for not using AGPL licensed software in its products. The reason
 
 ## The Incus hard fork
 
+*Psst, this is still WIP. Will be finished in the next 16-20 hours. Come back later if you want to read it in a better shape.*
+
 As a result of Canonical's sudden licence change and the associated CLA, LXD unfortunately had to undergo a hard fork under duress.
 
 Incus user can still access images.linuxcontainers.org.
