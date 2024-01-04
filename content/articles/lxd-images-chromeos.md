@@ -1,26 +1,26 @@
 +++
 draft = false
-title = 'The future of LXD does not look good on ChromeOS'
+title = 'The future of LXD on ChromeOS does not look good'
 date = 2024-01-02T21:31:00+02:00
 +++
 
-Starting in mid-April 2024, it will not be nearly as easy for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Googles CDN. The image server at https://images.linuxcontainers.org is getting phased out.
+From mid-April 2024, it will not be nearly as easy for ChromeOS LXD users to get new LXD images for distributions other than the `ubuntu:` and `ubuntu-daily:` remotes from Canonical and the Debian "penguin" image from Google's CDN. The image server at images.linuxcontainers.org will be discontinued for LXD users.
 
 ---
 
 ## Introduction
 
-ChromeOS users who have ever opened a terminal have, whether consciously or not, used [LXD](https://wiki.archlinux.org/title/LXD). In short, LXD is used to run Linux in an isolated environment. Sounds a bit like Docker, but it's cooler! :-) 
+ChromeOS users who have ever opened a terminal have, consciously or not, used [LXD]([LXD](https://wiki.archlinux.org/title/LXD)). In a nutshell, LXD is used to run Linux in an isolated environment. Sounds a bit like Docker, but it's cooler! :-)
 
-And also similar to Docker, where you download images from [Docker Hub](https://hub.docker.com), with LXD you often download the images from [images.linuxcontainers.org](https://images.linuxcontainers.org). The difference to Docker Hub is that the LXD images were built and provided by only two maintainers, with support from [Canonical](https://canonical.com/). And this soon falls on the feet of LXD users, and ChromeOS users in particular. But from the beginning…
+And also similar to Docker, where you download images from [Docker Hub](https://hub.docker.com), with LXD you often download the images from [images.linuxcontainers.org](https://images.linuxcontainers.org). The difference with Docker Hub is that the LXD images are built and provided by just two maintainers, with support from [Canonical](https://canonical.com). And that soon falls on the feet of LXD users, and ChromeOS users in particular. But back to the beginning…
 
 ## What happended?
 
-[Thomas Hipp](https://github.com/monstermunchkin), one of the main developers for LXD, left Canonical in November 2023. Canonical has subsequently cancelled all funding for the image server images.linuxcontainers.org. The costs cannot currently be paid sustainably. Access to images.linuxcontainers.org will be gradually discontinued with transition periods. This was announced [in the blog post](https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-server/18479) by Stéphane Graber, one of the main maintainers of LXD, in mid-December 2023, including specific deadlines.
+[Thomas Hipp](https://github.com/monstermunchkin), one of the main developers of LXD, left Canonical in November 2023. As a result, Canonical withdrew all funding for the images.linuxcontainers.org image server. The costs are currently unsustainable. Access to images.linuxcontainers.org will be phased out over a transition period. [This was announced in a blog post](https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-server/18479) by Stéphane Graber, one of the main maintainers of LXD, in mid-December 2023, including specific deadlines.
 
 What is also brand new is that Canonical has decided to change the LXD licence from Apache2 to AGPLv3 with just one commit. They are also forcing all contributions to sign the Canonical CLA. [This is a bad idea.](https://stgraber.org/2023/12/12/lxd-now-re-licensed-and-under-a-cla)
 
-The Canonical image mirror sites ([UK](https://uk.lxd.images.canonical.com/), [US](https://us.lxd.images.canonical.com/)) were last updated in August 2023 und bieten nur noch `ubuntu:` und `ubuntu-daily:` images an.
+The Canonical image mirror sites ([UK](https://uk.lxd.images.canonical.com/), [US](https://us.lxd.images.canonical.com/)) were last updated in August 2023 and only offer `ubuntu:` and `ubuntu-daily:` images.
 
 ## The ChromeOS issue
 
@@ -52,6 +52,8 @@ Google is known for not using AGPL licensed software in its products. The reason
 ## The Incus hard fork
 
 As a result of Canonical's sudden licence change and the associated CLA, LXD unfortunately had to undergo a hard fork under duress.
+
+Incus user can still access images.linuxcontainers.org.
 
 > Incus is a fork of LXD, a daemon mainly used to manage containers. It is favoured by those who want to treat containers like complete system images.
 > 
