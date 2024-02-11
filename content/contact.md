@@ -23,7 +23,9 @@ You can contact me via Matrix or email. Before contacting me, read the [Netiquet
 
 You can find me semi-active as `les(\.?cx)?` on:
 
-* IRC
-* GitHub
-* Codeberg
-* Bluesky
+* IRC _(lescx on libera.chat)_
+* [sourcehut](https://sr.ht/~les)
+* [Matrix](https://matrix.to/#/@les.cx:matrix.org)
+* ~~[GitHub](https://github.com/lescx)~~
+* ~~[Codeberg](https://codeberg.org/les)~~
+* ~~[Bluesky](https://bsky.app/profile/les.cx)~~
