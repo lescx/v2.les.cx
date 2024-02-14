@@ -23,7 +23,7 @@ You can contact me via Matrix or email. Before contacting me, read the [Netiquet
 
 You can find me semi-active as `les(\.?cx)?` on:
 
-* IRC ([libera.chat](https://libera.chat), [tilde.chat](https://tilde.chat)
+* IRC ([libera.chat](https://libera.chat), [tilde.chat](https://tilde.chat))
 * [sourcehut](https://sr.ht/~les)
 * [Matrix](https://matrix.to/#/@les.cx:matrix.org)
 * ~~[GitHub](https://github.com/lescx)~~
