@@ -15,7 +15,7 @@ You can contact me via Matrix or email. Before contacting me, read the [Netiquet
 
 * Matrix: [@les.cx:matrix.org](https://matrix.to/#/@les.cx:matrix.org)
 * Email: [luca@les.cx](mailto:luca@les.cx)
-    * [S/MIME](#)
+    * S/MIME
     * [PGP](/.well-known/openpgpkey/hu/wbp7trgro48kdyd9oi1ykze9zj5hpqwb)
     * [age](/.well-known/security.txt).
 
@@ -23,7 +23,7 @@ You can contact me via Matrix or email. Before contacting me, read the [Netiquet
 
 You can find me semi-active as `les(\.?cx)?` on:
 
-* IRC _(lescx on libera.chat)_
+* IRC ([libera.chat](https://libera.chat), [tilde.chat](https://tilde.chat)
 * [sourcehut](https://sr.ht/~les)
 * [Matrix](https://matrix.to/#/@les.cx:matrix.org)
 * ~~[GitHub](https://github.com/lescx)~~
