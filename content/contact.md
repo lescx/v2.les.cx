@@ -16,12 +16,12 @@ You can contact me via Matrix or email. Before contacting me via email, read the
 * [luca@les.cx](mailto:luca@les.cx)
 * S/MIME supported
 * [PGP](/.well-known/openpgpkey/hu/wbp7trgro48kdyd9oi1ykze9zj5hpqwb)
-* [age](/.well-known/security.txt).
+* [age](/.well-known/security.txt)
 
----
+## Also…
 
 You can also find me semi-active as `les(\.?cx)?` on:
 
-* Matrix: [@les.cx:matrix.org](https://matrix.to/#/@les.cx:matrix.org)
-* IRC: `lescx`  on [libera.chat](https://libera.chat), [tilde.chat](https://tilde.chat)
+* [Matrix](https://matrix.to/#/@les.cx:matrix.org)
+* IRC on [libera.chat](https://libera.chat) and [tilde.chat](https://tilde.chat)
 * [sourcehut](https://git.sr.ht/~les)
