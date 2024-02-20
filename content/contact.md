@@ -20,8 +20,6 @@ You can contact me via Matrix or email. Before contacting me via email, read the
 
 ## Also…
 
-You can also find me semi-active as `les(\.?cx)?` on:
-
 * [Matrix](https://matrix.to/#/@les.cx:matrix.org)
 * IRC on [libera.chat](https://libera.chat) and [tilde.chat](https://tilde.chat)
 * [sourcehut](https://git.sr.ht/~les)
