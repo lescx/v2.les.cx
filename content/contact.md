@@ -24,4 +24,4 @@ You can also find me semi-active as `les(\.?cx)?` on:
 
 * Matrix: [@les.cx:matrix.org](https://matrix.to/#/@les.cx:matrix.org)
 * IRC: `lescx`  on [libera.chat](https://libera.chat), [tilde.chat](https://tilde.chat)
-* [sourcehut](https://git.sr.ht/~les
+* [sourcehut](https://git.sr.ht/~les)
