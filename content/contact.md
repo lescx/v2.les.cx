@@ -3,7 +3,7 @@ title = 'Contact'
 draft = false
 +++
 
-You can contact me via Matrix or email. Before contacting me via email, read the [Netiquette](#netiquette) section down below.
+You can contact me via Matrix or email. Before contacting me via email, read the [Netiquette](#email-netiquette) section down below.
 
 ## Email Netiquette
 
