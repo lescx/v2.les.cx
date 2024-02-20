@@ -7,8 +7,8 @@ You can contact me via Matrix or email. Before contacting me via email, read the
 
 ## Email Netiquette
 
-* Email: Plain text. I do not read emails that are formatted in HTML.
-* Email: Use `S/MIME`, `PGP` or `age` if you want an answer.
+* Plain text. I do not read emails that are formatted in HTML.
+* Use `S/MIME`, `PGP` or `age` if you want an answer.
 * Don't send me spam, newsletters, ads, crypto/NFT or marketing SEO bullshit.
 
 ## Contact details
